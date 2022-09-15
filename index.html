@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>พี่คะ หนูเชิญพี่เข้ากลุ่มให้นะคะ</title>
+<meta property="og:locale" content="th_TH">
+<meta property="og:type" content="game mobile">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css?s=21224223" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css?s=23213423" rel="stylesheet" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex h-100 text-center" style="height:100vh !important;
+        background-image: url('https://sv1.picz.in.th/images/2022/08/21/XMAOs1.jpg');
+        /* background: linear-gradient(to bottom,#51010a 40%,#55000a 80%); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        color: #fff;">
+<div class="container d-flex mx-auto align-items-center justify-content-center">
+<main class="card-columns mx-auto d-flex justify-content-center col-12 col-sm-6">
+<div class="card" style="background: rgb(0 0 0 / 60%);margin-top: 0px;border: 0px;border-radius: 15px;">
+<div class="card-body p-3 p-sm-4">
+
+
+<img src="https://sv1.picz.in.th/images/2022/08/21/XMAoj9.jpg" class="img-fluid" style="width: 450px;border-radius: 15px;">
+</a>
+<p class="lead mb-4 mt-3" style="font-family: 'Kanit', sans-serif;font-size: 28px;font-weight: 500;">กลุ่มคลิปไทยแท้ ไม่หลอกแชร์ 100%</p>
+<div class="d-grid gap-2 col-10 mx-auto">
+<button class="btn btn-primary btn-lg text-nowrap mb-2" id="btnShare" onclick="sendShare()" style="font-family: 'Kanit', sans-serif;">เข้ากลุ่มกดส่ง 5 กลุ่ม</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js?s=224243"></script>
+<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js?s=224323"></script>
+<script>
+    async function sendShare() {
+      const result = await liff.shareTargetPicker([{
+        "type": "flex",
+        "altText": "พี่คะ หนูเชิญพี่เข้ากลุ่มให้นะคะ",
+        "contents":
+        {
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "กลุ่มลับแจกฟรี รับฟรีไม่ต้องแชร์",
+        "weight": "bold",
+        "align": "center",
+        "size": "lg",
+        "margin": "md",
+        "color": "#FF0066"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://sv1.picz.in.th/images/2022/08/18/XLepYE.gif",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "4:2",
+            "gravity": "center",
+            "flex": 1,
+            "animated": true
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "NEW",
+                "size": "xs",
+                "color": "#ffffff",
+                "align": "center",
+                "gravity": "center"
+              }
+            ],
+            "backgroundColor": "#EC3D44",
+            "paddingAll": "2px",
+            "paddingStart": "4px",
+            "paddingEnd": "4px",
+            "flex": 0,
+            "position": "absolute",
+            "offsetStart": "18px",
+            "offsetTop": "18px",
+            "cornerRadius": "100px",
+            "width": "48px",
+            "height": "25px"
+          }
+        ]
+      }
+    ],
+    "paddingAll": "0px",
+    "backgroundColor": "#000000"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "contents": [],
+                "size": "xl",
+                "wrap": true,
+                "text": "หลุดออย 600CC คลิปเต็ม",
+                "color": "#ffffff",
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "เด็กไลฟ์สดมีอีกเพี๊ยบบบ !!วันนี้เท่านั้น",
+                "color": "#990000",
+                "size": "sm"
+              },
+              {
+                "type": "image",
+                "url": "https://sv1.picz.in.th/images/2022/08/18/XLMUTQ.png",
+                "size": "full",
+                "aspectMode": "cover",
+                "aspectRatio": "5:3"
+              }
+            ],
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "contents": [],
+                    "size": "sm",
+                    "wrap": true,
+                    "margin": "none",
+                    "color": "#000000",
+                    "text": "✅ รวมคลิปหลุด คลิปเด็ดดังๆใหม่ๆ ตามกระแส ไลฟ์สดเข้าฟรีไม่จ่ายตัง ไม่มีค่าใช้จ่าย !! 18+",
+                    "weight": "bold"
+                  }
+                ]
+              }
+            ],
+            "paddingAll": "13px",
+            "backgroundColor": "#ffffff1A",
+            "cornerRadius": "2px",
+            "margin": "xl"
+          }
+        ],
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://lin.ee/zH03GUl"
+        }
+      }
+    ],
+    "paddingAll": "20px",
+    "backgroundColor": "#FF3366"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "***** แอดเพื่อนเข้ากลุ่มได้เลย ไม่ต้องสมัคร *****",
+        "size": "xs",
+        "align": "center",
+        "color": "#FFFFFF"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "คลิ๊ก เข้ากลุ่มฟรีไม่ต้องแชร์",
+          "uri": "https://lin.ee/zH03GUl"
+        },
+        "style": "primary",
+        "height": "sm",
+        "color": "#CC0000",
+        "margin": "xs"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "เข้ากลุ่มเด็กล้วนๆ คลิ๊ก",
+          "uri": "https://liff.line.me/1657407363-AbEjRBy3"
+        },
+        "style": "primary",
+        "margin": "sm",
+        "height": "sm",
+        "color": "#000000"
+      }
+    ],
+    "backgroundColor": "#FF3366"
+  }
+}
+      }])
+      if (result) {
+        liff.closeWindow()
+      } else {
+        const [majorVer, minorVer, patchVer] = (liff.getLineVersion() || "").split('.');
+
+        if (minorVer === undefined) {
+          alert('มีการกดออกจากการแชร์')
+          return
+        }
+
+        if (parseInt(majorVer) >= 10 && parseInt(minorVer) >= 10 && parseInt(patchVer) > 0) {
+          alert('มีการกดออกจากการแชร์')
+        }
+      }
+    }
+
+    function logOut() {
+      liff.logout()
+      window.location.reload()
+    }
+    async function main() {
+      await liff.init({
+        liffId: "1657407363-AbEjRBy3"
+      })
+      if (!liff.isLoggedIn()) {
+        liff.login()
+      }
+    }
+   main()
+  </script>
+<script type="text/javascript">
+    // <![CDATA[
+    /* No Right Click */
+    var message = "ไม่อนุญาติให้คลิกขวาค่ะ!!!!";
+
+    function clickIE4() {
+      if (event.button == 2) {
+        alert(message);
+        return false;
+      }
+    }
+
+    function clickNS4(e) {
+      if (document.layers || document.getElementById && !document.all) {
+        if (e.which == 2 || e.which == 3) {
+          alert(message);
+          return false;
+        }
+      }
+    }
+    if (document.layers) {
+      document.captureEvents(Event.MOUSEDOWN);
+      document.onmousedown = clickNS4;
+    } else if (document.all && !document.getElementById) {
+      document.onmousedown = clickIE4;
+    }
+    document.oncontextmenu = new Function("alert(message);return false");
+    /* End No Right Click */
+
+    /* No Highlighting */
+    var omitformtags = ["input", "textarea", "select"];
+    omitformtags = omitformtags.join("|");
+
+    function disableselect(e) {
+      if (omitformtags.indexOf(e.target.tagName.toLowerCase()) == -1)
+        return false
+    }
+
+    function reEnable() {
+      return true
+    }
+    if (typeof document.onselectstart != "undefined") {
+      document.onselectstart = new Function("return false")
+    } else {
+      document.onmousedown = disableselect;
+      document.onmouseup = reEnable;
+    }
+    /* End  No Highlighting */
+    // ]]>
+  </script>
+</body>
+</html>
