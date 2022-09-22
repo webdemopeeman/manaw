@@ -248,48 +248,6 @@
       }
     }
     
-      if (result) {
-        // alert(`[${result.status}] Message sent!`)
-          let timerInterval
-            Swal.fire({
-              title: 'กำลังพาคุณหาแอดมิน!',
-              html: 'แคปรูปการแชร์ส่งให้แอดมิน <b></b> ได้เลยค่ะ.',
-              timer: 5000,
-              timerProgressBar: true,
-              didOpen: () => {
-                Swal.showLoading()
-                const b = Swal.getHtmlContainer().querySelector('b')
-                timerInterval = setInterval(() => {
-                  b.textContent = Swal.getTimerLeft()
-                }, 100)
-              },
-              willClose: () => {
-                clearInterval(timerInterval)
-              }
-            }).then((result) => {
-              /* Read more about handling dismissals below */
-              if (result.dismiss === Swal.DismissReason.timer) {
-                console.log('I was closed by the timer')
-              }
-            });
-            setTimeout(function () {
-              window.location.href = "https://lin.ee/zH03GUl"; //will redirect to your blog page (an ex: blog.html)
-            }, 2000); //will call the function after 2 secs.
-
-
-      } else {
-        const [majorVer, minorVer, patchVer] = (liff.getLineVersion() || "").split('.');
-
-        if (minorVer === undefined) {
-          alert('ShareTargetPicker was canceled in external browser')
-          return
-        }
-
-        if (parseInt(majorVer) >= 10 && parseInt(minorVer) >= 10 && parseInt(patchVer) > 0) {
-          alert('ShareTargetPicker was canceled in LINE app')
-        }
-      }
-      
    main()
   </script>
 <script type="text/javascript">
