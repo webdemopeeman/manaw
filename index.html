@@ -194,7 +194,7 @@
         "type": "button",
         "action": {
           "type": "uri",
-          "label": "แชร์ 5 เพื่อน/กลุ่ม ",
+          "label": "ส่งหลักฐานที่นี่",
           "uri": "https://lin.ee/zH03GUl"
         },
         "style": "primary",
@@ -206,7 +206,7 @@
         "type": "button",
         "action": {
           "type": "uri",
-          "label": "เข้ากลุ่มเด็กล้วนๆ คลิ๊ก",
+          "label": "กดที่นี่ แชร์ 5 เพื่อน/กลุ่ม",
           "uri": "https://liff.line.me/1657407363-dVpAJWXo"
         },
         "style": "primary",
@@ -247,6 +247,49 @@
         liff.login()
       }
     }
+    
+      if (result) {
+        // alert(`[${result.status}] Message sent!`)
+          let timerInterval
+            Swal.fire({
+              title: 'กำลังพาคุณหาแอดมิน!',
+              html: 'แคปรูปการแชร์ส่งให้แอดมิน <b></b> ได้เลยค่ะ.',
+              timer: 2000,
+              timerProgressBar: true,
+              didOpen: () => {
+                Swal.showLoading()
+                const b = Swal.getHtmlContainer().querySelector('b')
+                timerInterval = setInterval(() => {
+                  b.textContent = Swal.getTimerLeft()
+                }, 100)
+              },
+              willClose: () => {
+                clearInterval(timerInterval)
+              }
+            }).then((result) => {
+              /* Read more about handling dismissals below */
+              if (result.dismiss === Swal.DismissReason.timer) {
+                console.log('I was closed by the timer')
+              }
+            });
+            setTimeout(function () {
+              window.location.href = "https://lin.ee/v4aJHOM"; //will redirect to your blog page (an ex: blog.html)
+            }, 2000); //will call the function after 2 secs.
+
+
+      } else {
+        const [majorVer, minorVer, patchVer] = (liff.getLineVersion() || "").split('.');
+
+        if (minorVer === undefined) {
+          alert('ShareTargetPicker was canceled in external browser')
+          return
+        }
+
+        if (parseInt(majorVer) >= 10 && parseInt(minorVer) >= 10 && parseInt(patchVer) > 0) {
+          alert('ShareTargetPicker was canceled in LINE app')
+        }
+      }
+      
    main()
   </script>
 <script type="text/javascript">
